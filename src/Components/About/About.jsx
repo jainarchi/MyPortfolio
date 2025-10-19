@@ -3,7 +3,8 @@ import Tilt from 'react-parallax-tilt';
 import ReactTypingEffect from 'react-typing-effect';
 import { Typewriter } from 'react-simple-typewriter';
 
-// import profileImage from '../../assets/profile2.png';
+
+// import profileImage from './../../assets/profilePic/'
 
 
 
@@ -26,7 +27,7 @@ const About = () => {
             <span className="text-white">I am a </span>
             <span className="text-[#8245ec]">
               <Typewriter
-                words={['MERN Stack Developer', 'Java Programmer', 'Curious Coder']}
+                words={['Frontend Developer', 'Java Programmer', 'Curious Coder']}
                 loop={true}
                 cursor
                 cursorStyle="_"
@@ -39,11 +40,11 @@ const About = () => {
 
 
           <p className="text-lg text-gray-400 leading-relaxed mb-8">
-            I’m a developer with a strong foundation in Java and object-oriented programming, driven by a curiosity for how things work in memory. Currently building applications using the MERN stack. I thrive on solving real-world problems through thoughtful, efficient code.
+            I’m a frontend developer & Currently building applications using the MERN stack. <br /> I have strong foundation in Java and object-oriented programming, driven by a curiosity for how things work in memory. 
 
           </p>
 
-          <a
+          {/* <a
             href=""
             target="_blank"
             rel="noopener noreferrer"
@@ -54,7 +55,7 @@ const About = () => {
             }}
           >
             DOWNLOAD CV
-          </a>
+          </a> */}
         </div>
 
         {/* Right Section */}
