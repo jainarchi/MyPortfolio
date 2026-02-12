@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin , FaTwitter } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,8 +73,8 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4">
           <a
             href="https://github.com/jainarchi"
-            target="_blank" // open on new page
-            rel="noopener noreferrer" // for security
+            target="_blank" 
+            rel="noopener noreferrer" 
             className="text-gray-300 hover:text-[#8245ec]"
           >
             <FaGithub size={24} />
@@ -86,6 +86,14 @@ const Navbar = () => {
             className="text-gray-300 hover:text-[#8245ec]"
           >
             <FaLinkedin size={24} />
+          </a>
+           <a
+            href="https://x.com/ajain96756"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <FaTwitter size={24} />
           </a>
         </div>
 
@@ -138,6 +146,14 @@ const Navbar = () => {
               >
                 <FaLinkedin size={24} />
               </a>
+               <a
+            href="https://x.com/ajain96756"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <FaTwitter size={24} />
+          </a>
             </div>
           </ul>
         </div>

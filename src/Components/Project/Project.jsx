@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { projects } from "../../constants";
 
 const Work = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+  // const [selectedProject, setSelectedProject] = useState(null);
 
   const handleOpenModal = (project) => {
     setSelectedProject(project);
   };
 
-  const handleCloseModal = () => {
-    setSelectedProject(null);
-  };
+  // const handleCloseModal = () => {
+  //   setSelectedProject(null);
+  // };
 
   return (
     <section
@@ -28,12 +28,12 @@ const Work = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-12 grid-cols-1 md:grid-cols-2">
         {projects.map((project) => (
           <div
             key={project.id}
             onClick={() => handleOpenModal(project)}
-            className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300"
+            className="border border-gray-700 bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300"
           >
             <div className="p-4">
               <img
@@ -55,7 +55,7 @@ const Work = () => {
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="inline-block bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1 mr-2 mb-2"
+                    className="inline-block bg-[#3f3c4270] text-sm text-purple-500 rounded-lg px-3 py-2 mr-2 mb-2"
                   >
                     {tag}
                   </span>
@@ -68,7 +68,16 @@ const Work = () => {
         ))}
       </div>
 
-      {/* Modal Container */}
+
+
+
+
+
+
+
+
+
+      {/* Modal Container 
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
           <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
@@ -123,6 +132,11 @@ const Work = () => {
           </div>
         </div>
       )}
+    */}
+
+
+
+
     </section>
   );
 };
