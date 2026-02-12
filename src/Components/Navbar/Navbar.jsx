@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin , FaTwitter } from "react-icons/fa";
 
+import { RiLinkedinBoxFill  , RiGithubFill , RiTwitterXLine } from "react-icons/ri";
+
+
+  
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
@@ -58,7 +63,7 @@ const Navbar = () => {
           {menuItems.map((item) => (
             <li
               key={item.id}
-              className={`cursor-pointer hover:text-[#8245ec] ${
+              className={`cursor-pointer hover:border-purple-500 border-b-2 border-black ${
                 activeSection === item.id ? "text-[#8245ec]" : ""
               }`}
             >
@@ -77,7 +82,7 @@ const Navbar = () => {
             rel="noopener noreferrer" 
             className="text-gray-300 hover:text-[#8245ec]"
           >
-            <FaGithub size={24} />
+            <RiGithubFill size={24} />
           </a>
           <a
             href="https://www.linkedin.com/in/archi-jain-70233b273"
@@ -85,7 +90,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
           >
-            <FaLinkedin size={24} />
+            <RiLinkedinBoxFill   size={24} />
           </a>
            <a
             href="https://x.com/ajain96756"
@@ -93,7 +98,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
           >
-            <FaTwitter size={24} />
+            <RiTwitterXLine size={24} />
           </a>
         </div>
 
@@ -136,7 +141,7 @@ const Navbar = () => {
                 rel="noopener noreferrer" // for security
                 className="text-gray-300 hover:text-[#8245ec]"
               >
-                <FaGithub size={24} />
+                <RiGithubFill size={24} />
               </a>
               <a
                 href="https://www.linkedin.com/in/archi-jain-70233b273"
@@ -144,7 +149,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-[#8245ec]"
               >
-                <FaLinkedin size={24} />
+                <RiLinkedinBoxFill size={24} />
               </a>
                <a
             href="https://x.com/ajain96756"
@@ -152,7 +157,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
           >
-            <FaTwitter size={24} />
+            <RiTwitterXLine  size={24} />
           </a>
             </div>
           </ul>

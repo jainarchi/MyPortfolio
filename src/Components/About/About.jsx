@@ -13,70 +13,52 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-16 px-[7vw] lg:px-[20vw] font-sans"
+      className="py-16 px-[7vw] lg:px-[20vw] font-sans h-[80vh] flex justify-center items-center "
     >
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between">
-        {/* Left Section */}
-        <div className="md:w-1/2 mr-8 text-center md:text-left mt-10 md:mt-0">
-          <h1 className="text-4xl md:text-4xl font-bold text-white leading-tight mb-6">
-            Hi, I am Archi Jain
+
+        <div className=" h-100 w-100 text-center flex flex-col gap-12 items-center">
+          
+          <div>
+          <h1 className="text-2xl md:text-5xl text-white leading-tight mb-4">
+            Hi, I'm Archi Jain, a
           </h1>
 
           {/* Skills Heading with Typing Effect */}
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
-            <span className="text-white">I am a </span>
+          <h3 className="text-2xl sm:text-2xl md:text-5xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <span className="text-[#8245ec]">
               <Typewriter
-                words={['Frontend Developer', 'Java Programmer', 'Curious Coder']}
+                words={['MERN Stack Developer']}
                 loop={true}
                 cursor
                 cursorStyle="_"
                 typeSpeed={100}
                 deleteSpeed={50}
-                delaySpeed={2000}
+                delaySpeed={3000}
               />
             </span>
           </h3>
+          </div>
 
 
-          <p className="text-lg text-gray-400 leading-relaxed mb-8">
-            I’m a frontend developer & Currently building applications using the MERN stack. <br /> I have strong foundation in Java and object-oriented programming, driven by a curiosity for how things work in memory. 
-
+          <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl">
+           I bring value to web development by combining technical expertise with creativity and design as a MERN Stack Developer.
           </p>
 
-          {/* <a
+          <a
             href=""
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-white py-3 px-8 rounded-full text-lg font-bold transition-transform duration-300 hover:scale-105"
+            className="inline-block text-white py-3 px-8 rounded-full text-lg font-semibold transition-transform duration-300 hover:scale-105 max-w-fit"
             style={{
               background: 'linear-gradient(90deg, #8245ec, #a855f7)',
               boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
             }}
           >
             DOWNLOAD CV
-          </a> */}
+          </a>
         </div>
 
-        {/* Right Section */}
-        <div className="md:w-1/2 flex justify-center md:justify-end">
-          <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full"
-            tiltMaxAngleX={20}
-            tiltMaxAngleY={20}
-            perspective={1000}
-            scale={1.05}
-            transitionSpeed={1000}
-            gyroscope={true}
-          >
-            <img
-              // src={profileImage}
-              alt="Profile"
-              className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
-            />
-          </Tilt>
-        </div>
-      </div>
+      
     </section>
   );
 };

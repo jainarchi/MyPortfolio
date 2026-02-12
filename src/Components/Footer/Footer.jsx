@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
+import { RiLinkedinBoxFill  , RiGithubFill , RiTwitterXLine  } from "react-icons/ri";
 
 const Footer = () => {
  
@@ -36,7 +37,9 @@ const Footer = () => {
 
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[     
-            { icon: <FaLinkedin />, link: "" },
+            { icon: <RiLinkedinBoxFill  />, link: "https://www.linkedin.com/in/archi-jain-70233b273" },
+            {icon : <RiGithubFill />, link:"https://github.com/jainarchi"},
+            {icon : <RiTwitterXLine  />, link:"https://x.com/ajain96756"},
       
           ].map((item, index) => (
             <a
@@ -52,7 +55,7 @@ const Footer = () => {
         </div>
 
         <p className="text-sm text-gray-400 mt-6">
-          © 2025 Archi Jain. All rights reserved.
+          © 2026 Archi Jain. All rights reserved.
         </p>
       </div>
     </footer>
