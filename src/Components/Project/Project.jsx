@@ -1,17 +1,6 @@
-import React, { useState } from "react";
 import { projects } from "../../constants";
 
 const Work = () => {
-  // const [selectedProject, setSelectedProject] = useState(null);
-
-  const handleOpenModal = (project) => {
-    setSelectedProject(project);
-  };
-
-  // const handleCloseModal = () => {
-  //   setSelectedProject(null);
-  // };
-
   return (
     <section
       id="projects"
@@ -32,24 +21,19 @@ const Work = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            onClick={() => handleOpenModal(project)}
-            className="border border-gray-700 bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300 my-10 md:flex gap-6 "
+            className={`border border-gray-700 bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300 my-10 gap-6 py-4 flex flex-col md:flex-row ${project.id % 2 !== 0 && 'md:flex-row-reverse'}`}
           >
             <div className="p-4 md:w-1/2">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover rounded-xl aspect-"
+                className="w-full object-cover rounded-md aspect-video bg-red-200"
               />
             </div>
-            <div className="p-6 md:w-1/2">
-              <h3 className="text-2xl font-semibold text-gray-200 mb-2">
-                {project.title}
-              </h3>
-              <p className="text-gray-500 mb-4 pt-4 line-clamp-3">
-                {project.description}
-              </p>
 
+            <div className="p-6 md:w-1/2">
+              <h3 className="text-2xl md:text-3xl text-purple-50 mb-2">{project.title}</h3>
+              <p className="text-gray-500 mb-6 mt-4">{project.description}</p>
 
               <div className="mb-4">
                 {project.tags.map((tag, index) => (
@@ -61,21 +45,23 @@ const Work = () => {
                   </span>
                 ))}
               </div>
+              <a
+                href={project.webapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-md text-purple-400"
+              >
+                View Live 
+              </a>
 
-              
+              <div></div>
             </div>
+
+
+
           </div>
         ))}
       </div>
-
-
-
-
-
-
-
-
-
 
       {/* Modal Container 
       {selectedProject && (
@@ -133,10 +119,6 @@ const Work = () => {
         </div>
       )}
     */}
-
-
-
-
     </section>
   );
 };
