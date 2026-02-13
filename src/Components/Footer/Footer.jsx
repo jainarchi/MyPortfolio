@@ -1,5 +1,3 @@
-import React from "react";
-import { FaLinkedin } from "react-icons/fa";
 import { RiLinkedinBoxFill  , RiGithubFill , RiTwitterXLine  } from "react-icons/ri";
 
 const Footer = () => {

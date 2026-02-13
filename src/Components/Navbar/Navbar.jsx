@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaGithub, FaLinkedin , FaTwitter } from "react-icons/fa";
-
 import { RiLinkedinBoxFill  , RiGithubFill , RiTwitterXLine } from "react-icons/ri";
 
 
