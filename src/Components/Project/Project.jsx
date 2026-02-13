@@ -1,4 +1,4 @@
-import { projects } from "../../constants";
+import { projects } from '../../Constants';
 
 const Work = () => {
   return (

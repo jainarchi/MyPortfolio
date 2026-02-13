@@ -41,7 +41,7 @@ const About = () => {
           </p>
 
           <a
-            href=""
+            href="./Archi_Jain_MERN.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full text-lg font-semibold transition-transform duration-300 hover:scale-105 max-w-fit"
@@ -50,7 +50,7 @@ const About = () => {
               boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
             }}
           >
-            view CV
+            Download CV
           </a>
         </div>
 
