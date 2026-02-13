@@ -19,7 +19,7 @@ import postmanLogo from './assets/tech_logo/postman.png';
 import { RiVercelLine , RiLockLine ,RiLinksLine , RiGithubFill  } from "react-icons/ri";
 
 
-import SkillSphere from './assets/work_logo/skillSphere.webp'
+import SkillSphere from './assets/work_logo/SkillSphere.webp'
 import PassVault from './assets/work_logo/PassVault.webp'
 import ImageEditor from './assets/work_logo/ImageEditor.webp'
 import SnakeGame from './assets/work_logo/SnakeGame.webp'
