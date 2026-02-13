@@ -27,7 +27,7 @@ const Work = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full object-cover rounded-md aspect-video bg-red-200"
+                className="w-full object-cover rounded-md aspect-video"
               />
             </div>
 
