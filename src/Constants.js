@@ -18,8 +18,6 @@ import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
 import { RiVercelLine , RiLockLine ,RiLinksLine , RiGithubFill  } from "react-icons/ri";
 
-// Project Section Logo's
-// import {Flutter , MetaverseExplorer , Netflix , PassVault , SkillSphere, Studio} from './assets/work_logo'
 
 import SkillSphere from './assets/work_logo/skillSphere.webp'
 import PassVault from './assets/work_logo/PassVault.webp'

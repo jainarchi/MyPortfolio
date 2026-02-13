@@ -4,10 +4,6 @@ import ReactTypingEffect from 'react-typing-effect';
 import { Typewriter } from 'react-simple-typewriter';
 
 
-// import profileImage from './../../assets/profilePic/'
-
-
-
 
 const About = () => {
   return (
@@ -54,7 +50,7 @@ const About = () => {
               boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
             }}
           >
-            DOWNLOAD CV
+            view CV
           </a>
         </div>
 

@@ -13,6 +13,7 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm()
 
@@ -20,15 +21,17 @@ const Contact = () => {
   const onSubmit = () => {
 
     return emailjs
+
       .sendForm(
-        "service_z543pm5", //  EmailJS Service ID
-        "template_nu3tvib",// EmailJS Template ID
-        formRef.current,
-        "xFw6WbWuCwr6-HDOS"  // Replace with your EmailJS Public Key
+        import.meta.env.VITE_SERVICE_ID,   
+        import.meta.env.VITE_TEMPLATE_ID,  
+        formRef.current,                   
+        import.meta.env.VITE_PUBLIC_KEY 
       )
       .then(() => {
         setIsSent(true);
         formRef.current.reset();
+        reset()
         toast('Message sent successfully! ✅', {
           position: "top-right",
           autoClose: 2500,
