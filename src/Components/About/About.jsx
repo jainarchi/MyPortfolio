@@ -16,7 +16,7 @@ const About = () => {
           
           <div>
           <h1 className="text-2xl md:text-5xl text-white leading-tight mb-4">
-            Hi, I'm Archi Jain, a
+            Hi, I'm Archi Jain
           </h1>
 
           {/* Skills Heading with Typing Effect */}
@@ -42,7 +42,7 @@ const About = () => {
           </p>
 
           <a
-            href="./Archi_Jain_Resume.pdf"
+            href="./Archi_Jain_MERN.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full text-lg font-semibold transition-transform duration-300 hover:scale-105 max-w-fit"

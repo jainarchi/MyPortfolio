@@ -183,12 +183,6 @@ export const projects = [
   // },
 
 
-
-
-
-
-
-
 ];  
 
 
