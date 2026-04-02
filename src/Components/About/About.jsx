@@ -38,10 +38,11 @@ const About = () => {
 
           <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl">
            I bring value to web development by combining technical expertise with creativity and design as a MERN Stack Developer.
+           Currently exploring Generative AI and RAG implementation to integrate intelligent features into web projects.
           </p>
 
           <a
-            href="./Archi_Jain_MERN.pdf"
+            href="./Archi_Jain_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full text-lg font-semibold transition-transform duration-300 hover:scale-105 max-w-fit"

@@ -18,16 +18,18 @@ import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
 import { RiVercelLine , RiLockLine ,RiLinksLine , RiGithubFill  } from "react-icons/ri";
 
-
+import InfraAI from './assets/work_logo/InfraAI.webp'
+// import InfraAI_Landing from './assets/work_logo/InfraAI-landingPage.webp'
 import SkillSphere from './assets/work_logo/SkillSphere.webp'
-import PassVault from './assets/work_logo/PassVault.webp'
 import ImageEditor from './assets/work_logo/ImageEditor.webp'
 import SnakeGame from './assets/work_logo/SnakeGame.webp'
-import Golf from './assets/work_logo/Golf.webp'
+
 import Metaverse from './assets/work_logo/Metaverse.webp'
 import Studio from './assets/work_logo/Studio.webp'
 import Flutter from './assets/work_logo/Flutter.webp'
-import Netflix from './assets/work_logo/Netflix.webp'
+
+// import Golf from './assets/work_logo/Golf.webp'
+// import Netflix from './assets/work_logo/Netflix.webp'
 
 export const SkillsInfo = [
    {
@@ -42,6 +44,7 @@ export const SkillsInfo = [
     skills: [
       { name: 'HTML', logo: htmlLogo },
       { name: 'CSS', logo: cssLogo },
+      {name : 'SCSS'},
       { name: 'JavaScript', logo: javascriptLogo },
       { name: 'React JS', logo: reactjsLogo },
       // { name: 'Redux', logo: reduxLogo },
@@ -77,25 +80,36 @@ export const SkillsInfo = [
 
 
 export const projects = [ 
-  {
-    id: 0,
+ 
+  
+ {
+  id: 0,
+  title: "InfraAI",
+  description:
+    "An AI-powered chat application with real-time streaming, internet search capabilities, and persistent chat history. Features JWT authentication, Redis token blacklisting, and multi-model AI integration.",
+  image: InfraAI,
+  tags: ['MERN', 'LangChain', 'Redis', 'Socket.IO', 'JWT'],
+  webapp: "https://infra-ai-psi.vercel.app",
+},
+   {
+    id: 1,
     title: "SkillSphere",
     description:
       "A comprehensive Technical Assessment platform featuring built-in anti-cheating mechanisms, integrated note-taking capabilities, and automated evaluation tools.",
     image: SkillSphere,
     tags: ['ReactJS' , 'NodeJS', 'ExpressJS', 'MongoDB' , 'JWT' , 'API'],
     webapp: "https://skillsphere-frontend-nine.vercel.app/",
-  }, 
+  },
   
-  {
-    id: 1,
-    title: "PassVault",
-    description:
-      "A secure password management web application featuring robust JWT-based authentication and industry-standard Bcrypt hashing for end-to-end credential protection.",
-    image: PassVault,
-    tags: ["RectJS" , 'NodeJS' , 'ExpressJS' , 'MongoDB' , 'JWT'],
-    webapp: "https://pass-vault-lime.vercel.app/",
-  }, 
+  // {
+  //   id: 1,
+  //   title: "PassVault",
+  //   description:
+  //     "A secure password management web application featuring robust JWT-based authentication and industry-standard Bcrypt hashing for end-to-end credential protection.",
+  //   image: PassVault,
+  //   tags: ["RectJS" , 'NodeJS' , 'ExpressJS' , 'MongoDB' , 'JWT'],
+  //   webapp: "https://pass-vault-lime.vercel.app/",
+  // }, 
   
   {
     id: 2,
@@ -106,32 +120,10 @@ export const projects = [
     tags: ["HTML", "CSS" , 'JS' , 'canvas'],
     webapp: "https://image-editor-psi-jet.vercel.app/",
   }, 
-  
+
 
   {
     id: 3,
-    title: "Snake Game",
-    description:
-      "A classic arcade game reconstruction focusing on core JavaScript logic, collision detection algorithms, and real-time state synchronization.",
-    image: SnakeGame,
-    tags: ["HTML", "CSS" , "JS"],
-    webapp: "https://snake-game-ochre-kappa.vercel.app/",
-  },
-
-   {
-    id: 4,
-    title: "Awwward Level Website",
-    description:
-      "A high-performance landing page inspired by award-winning designs, featuring advanced cinematic animations and smooth parallax effects powered by GSAP and ScrollTrigger.",
-    image: Golf ,
-    tags: ["HTML", "CSS" , 'GSAP' , 'ScrollTriger'],
-    webapp: "https://animating-website-liard.vercel.app/",
-  },
-
-
-
-  {
-    id: 5,
     title: "The Metaverse Explorer",
     description:
       "A modern, fully responsive web experience that showcases adaptive layout techniques and fluid design principles across all device screen sizes.",
@@ -140,7 +132,7 @@ export const projects = [
     webapp: "https://light-the-metaverse-explorer.vercel.app",
   },
   {
-    id: 6,
+    id: 4,
     title: "Studio",
     description:
       "A professional-grade platform built for large screens and mobile alike, featuring a clean, high-end design and pixel-perfect responsiveness.",
@@ -148,8 +140,18 @@ export const projects = [
     tags: ["HTML", "JS", "SCSS"],
     webapp: "https://studio-gamma-five-58.vercel.app/",
   },
+
+   {
+    id: 5,
+    title: "Snake Game",
+    description:
+      "A classic arcade game reconstruction focusing on core JavaScript logic, collision detection algorithms, and real-time state synchronization.",
+    image: SnakeGame,
+    tags: ["HTML", "CSS" , "JS"],
+    webapp: "https://snake-game-ochre-kappa.vercel.app/",
+  },
   {
-    id: 7,
+    id: 6,
     title: "Flutter Ecosystem",
     description:
       "A clean and organized resource hub for developers, built to be fast, responsive, and easy to use on any screen size.",
@@ -157,16 +159,28 @@ export const projects = [
     tags: ["HTML", "CS", "JS"],
     webapp: "https://flutter-dev-ecosystem.vercel.app/",
   },
+
+  
+  //  {
+  //   id: 7,
+  //   title: "Awwward Level Website",
+  //   description:
+  //     "A high-performance landing page inspired by award-winning designs, featuring advanced cinematic animations and smooth parallax effects powered by GSAP and ScrollTrigger.",
+  //   image: Golf ,
+  //   tags: ["HTML", "CSS" , 'GSAP' , 'ScrollTriger'],
+  //   webapp: "https://animating-website-liard.vercel.app/",
+  // },
+
   
 
-  { id: 8,
-    title: "Netflix Clone",
-    description:
-      "A pixel-perfect frontend clone of the Netflix interface, demonstrating proficiency in modern CSS layouts, dynamic data rendering, and high-fidelity UI replication.",
-    image: Netflix,
-    tags: ["HTML", "CS", "JS"],
-    webapp: "https://netflix-clone-mu-sage.vercel.app/",
-  },
+  // { id: 8,
+  //   title: "Netflix Clone",
+  //   description:
+  //     "A pixel-perfect frontend clone of the Netflix interface, demonstrating proficiency in modern CSS layouts, dynamic data rendering, and high-fidelity UI replication.",
+  //   image: Netflix,
+  //   tags: ["HTML", "CS", "JS"],
+  //   webapp: "https://netflix-clone-mu-sage.vercel.app/",
+  // },
 
 
 
