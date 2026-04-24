@@ -21,6 +21,7 @@ import { RiVercelLine , RiLockLine ,RiLinksLine , RiGithubFill  } from "react-ic
 import InfraAI from './assets/work_logo/InfraAI.webp'
 // import InfraAI_Landing from './assets/work_logo/InfraAI-landingPage.webp'
 import SkillSphere from './assets/work_logo/SkillSphere.webp'
+import SyncChat from './assets/work_logo/SyncChat.webp'
 import ImageEditor from './assets/work_logo/ImageEditor.webp'
 import SnakeGame from './assets/work_logo/SnakeGame.webp'
 
@@ -100,6 +101,15 @@ export const projects = [
     tags: ['ReactJS' , 'NodeJS', 'ExpressJS', 'MongoDB' , 'JWT' , 'API'],
     webapp: "https://skillsphere-frontend-nine.vercel.app/",
   },
+  {
+  id: 2,
+  title: "SyncChat",
+  description:
+    "A real-time chat application enabling multi-user communication through room-based messaging, built using Socket.IO for instant message synchronization.",
+  image: SyncChat,
+  tags: ['ReactJS', 'NodeJS', 'ExpressJS', 'Socket.IO'],
+  webapp: "https://real-time-chat-app-kappa-kohl.vercel.app/",
+},
   
   // {
   //   id: 1,
@@ -112,7 +122,7 @@ export const projects = [
   // }, 
   
   {
-    id: 2,
+    id: 3,
     title: "Image-Editor",
     description:
       "A high-performance image processing tool built with vanilla JavaScript and HTML5 Canvas, demonstrating complex state management and pixel manipulation without external frameworks.",
@@ -123,7 +133,7 @@ export const projects = [
 
 
   {
-    id: 3,
+    id: 4,
     title: "The Metaverse Explorer",
     description:
       "A modern, fully responsive web experience that showcases adaptive layout techniques and fluid design principles across all device screen sizes.",
@@ -132,7 +142,7 @@ export const projects = [
     webapp: "https://light-the-metaverse-explorer.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     title: "Studio",
     description:
       "A professional-grade platform built for large screens and mobile alike, featuring a clean, high-end design and pixel-perfect responsiveness.",
@@ -142,7 +152,7 @@ export const projects = [
   },
 
    {
-    id: 5,
+    id: 6,
     title: "Snake Game",
     description:
       "A classic arcade game reconstruction focusing on core JavaScript logic, collision detection algorithms, and real-time state synchronization.",
@@ -151,7 +161,7 @@ export const projects = [
     webapp: "https://snake-game-ochre-kappa.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Flutter Ecosystem",
     description:
       "A clean and organized resource hub for developers, built to be fast, responsive, and easy to use on any screen size.",
