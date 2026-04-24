@@ -42,7 +42,7 @@ const About = () => {
           </p>
 
           <a
-            href="./Archi_Jain_MERN.pdf"
+            href="https://drive.google.com/file/d/1LKk5yUEi1kIJtbEFPu-UA8cZcxHSi8Th/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full text-lg font-semibold transition-transform duration-300 hover:scale-105 max-w-fit"
@@ -51,7 +51,7 @@ const About = () => {
               boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
             }}
           >
-            Download CV
+            View CV
           </a>
         </div>
 
