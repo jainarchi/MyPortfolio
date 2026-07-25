@@ -23,7 +23,7 @@ const About = () => {
           <h3 className="text-2xl sm:text-2xl md:text-5xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <span className="text-[#8245ec]">
               <Typewriter
-                words={['MERN Stack Developer' , 'Frontend Developer' , 'Backend Developer']}
+                words={[ 'Frontend Developer' , 'Backend Developer', 'MERN Stack Developer']}
                 loop={true}
                 cursor
                 cursorStyle="_"
@@ -42,7 +42,7 @@ const About = () => {
           </p>
 
           <a
-            href="https://drive.google.com/file/d/1LKk5yUEi1kIJtbEFPu-UA8cZcxHSi8Th/view?usp=sharing"
+            href="https://drive.google.com/file/d/1caBd3nCjMN1oHgZMi5SyrKlmDdo7uQRb/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full text-lg font-semibold transition-transform duration-300 hover:scale-105 max-w-fit"
